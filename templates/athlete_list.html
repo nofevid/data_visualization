@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/echarts.js"></script>
+    <script src="../static/js/purple-passion.js"></script>
+    <script src="../static/js/world.js"></script>
+    <title>my page</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 51);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title">
+	<style>
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  padding: 12px 16px;
+	}
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+	</style>
+	<div class="dropdown">
+		<span><img src="../static/pic/Frame%2020.svg"></span>
+		<div class="dropdown-content">
+			<p><a href="/">Medal</a></p>
+			<p><a href="/athlete">Athlete</a></p>
+		</div>
+	</div>
+	<div class="title">
+		<h1>奥运 120 载</h1>
+	</div>
+    </div>
+
+    <div id="map_athlete"></div>
+
+    <div id="frame0">
+        <div id="linechart", class="big_card">折线图</div>
+    </div>
+
+    <script src="../static/js/ec_map_athlete.js"></script>
+    <script src="../static/js/page_ctrl_athlete.js"></script>
+    <script src="../static/js/ec_linechart.js"></script>
+</body>
+
+</html>
