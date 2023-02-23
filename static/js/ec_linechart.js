@@ -55,7 +55,9 @@ var line_option = {
 		},
 		{
 			position: 'right',
-			type: 'value'
+			type: 'value',
+			name: '奖牌数',
+			nameLocation: 'end'
 		}
 	],
 	series: [

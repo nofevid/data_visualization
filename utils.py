@@ -4,7 +4,11 @@ import numpy as np
 ae = pd.read_csv('data/athlete_events.csv', dtype='str')
 nr = pd.read_csv('data/noc_regions.csv')
 
+# print(ae)
+
 ae = ae.merge(nr, on='NOC', how='left')
+
+# print(ae)
 
 ae_s = ae[ae['Season'] == 'Summer']
 
